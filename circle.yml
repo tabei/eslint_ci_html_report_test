@@ -1,0 +1,6 @@
+general:
+  artifacts:
+    - tmp/report.html
+test:
+  pre:
+    - npm run lint -- -f node_modules/eslint-html-reporter/reporter.js -o tmp/report.html
